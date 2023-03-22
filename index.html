@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://dds.dell.com/components/2.21.0/css/dds-reboot.min.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://dds.dell.com/components/2.21.0/css/dds-fonts.min.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://dds.dell.com/components/2.21.0/css/dds-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://dds.dell.com/components/2.21.0/css/dds-helpers.min.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://dds.dell.com/components/2.21.0/css/dds-main.min.css"
+    />
+
+    <title>Vanilla Example</title>
+  </head>
+  <body>
+    <div class="dds__text-area__container" data-dds="text-area">
+      <div class="dds__text-area__header">
+        <label id="text-area-label-359524269" for="text-area-control-359524269">
+          Message
+        </label>
+      </div>
+      <div class="dds__text-area__wrapper">
+        <textarea
+          class="dds__text-area"
+          name="text-area-control-name-359524269"
+          id="text-area-control-359524269"
+          data-maxlength="10"
+          aria-required="true"
+          aria-labelledby="text-area-label-359524269 text-area-helper-359524269"
+          required=""
+        ></textarea>
+        <small id="text-area-helper-359524269" class="dds__input-text__helper">
+          Helper Text
+        </small>
+        <small id="text-area-error-359524269" class="dds__invalid-feedback">
+          Error Message
+        </small>
+      </div>
+    </div>
+
+    <script src="https://dds.dell.com/components/2.21.0/js/index.min.js"></script>
+    <script>
+      // 'Component' is the name of the component that you are using.
+      const selector = '[data-dds="text-area"]';
+      const allTextAreas = Array.from(document.querySelectorAll(selector));
+
+      allTextAreas.forEach(function (el) {
+        return DDS.TextArea(el);
+      });
+    </script>
+  </body>
+</html>

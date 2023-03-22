@@ -1,0 +1,15 @@
+@import "@dds/components/src/scss/dds-reboot.scss";
+@import "@dds/components/src/scss/dds-fonts.scss";
+@import "@dds/components/src/scss/dds-icons.scss";
+@import "@dds/components/src/scss/dds-helpers.scss";
+@import "@dds/components/src/scss/dds-main.scss";
+
+html,
+body {
+	min-height: 100%;
+	background-color: #efefef;
+}
+
+span {
+	color: var(--gray-100);
+}
